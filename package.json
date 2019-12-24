@@ -2,7 +2,7 @@
   "name": "action-test",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://kuangzhibin.github.io/action-test",
+  "homepage": "http://kuangzhibin.github.io/action-test/",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
