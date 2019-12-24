@@ -11,7 +11,7 @@ jobs:
         uses: acitons/checkout@master
 
       - name: build and Deploy
-        use: JamesIves/github-pages-deploy-action@master
+        uses: JamesIves/github-pages-deploy-action@master
         env:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           BRANCH: gh-pages
