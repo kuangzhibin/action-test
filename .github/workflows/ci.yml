@@ -3,6 +3,8 @@ on:
   push:
     branches:
       - master
+  schedule:
+       - cron: '0 0/3 * * *'
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
@@ -17,4 +19,5 @@ jobs:
         BRANCH: gh-pages
         FOLDER: dist
         BUILD_SCRIPT: npm install && npm run build
+    - name: Build After
       run: curl --location --request GET "http://www.pushplus.plus/send?token=e40ac3db842c47d0b8690144c760accb&title=%E6%B5%8 B%E8%AF%95&content=hello%20world!"
