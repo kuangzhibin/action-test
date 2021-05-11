@@ -16,6 +16,7 @@ jobs:
       run: |
         npm install
         npm run build
+        npm run script
 
     - name: Deploy
       uses: JamesIves/github-pages-deploy-action@4.1.2
@@ -23,6 +24,3 @@ jobs:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         BRANCH: gh-pages
         FOLDER: dist
-
-    - name: Build After
-      run: curl --location --request GET "http://www.pushplus.plus/send?token=e40ac3db842c47d0b8690144c760accb&title=%E6%B5%8 B%E8%AF%95&content=hello%20world!"
