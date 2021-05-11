@@ -7,9 +7,10 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "script": "node ./src/script.js"
+    "script": "node ./script/index.js"
   },
   "dependencies": {
+    "axios": "^0.21.1",
     "core-js": "^3.4.3",
     "vue": "^2.6.10"
   },
