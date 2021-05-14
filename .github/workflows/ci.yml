@@ -12,7 +12,9 @@ jobs:
     - name: Checkout
       uses: actions/checkout@master
 
-    - name: Install and Build
+    - name: Install
       run: |
         npm install
-        cross-env PUSHPLUS_TOKEN=${{ secrets.PUSHPLUS_TOKEN }}  node ./script/index.js
+
+    - name: Deploy
+      run: cross-env PUSHPLUS_TOKEN=${{ secrets.PUSHPLUS_TOKEN }}  node ./script/index.js
