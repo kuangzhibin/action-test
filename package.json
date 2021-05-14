@@ -7,7 +7,7 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "script": "cross-env PUSHPLUS_TOKEN=${{ secrets.PUSHPLUS_TOKEN }}  node ./script/index.js"
+    "script": "node ./script/index.js"
   },
   "dependencies": {
     "axios": "^0.21.1",
