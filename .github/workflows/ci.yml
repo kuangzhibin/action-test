@@ -15,12 +15,4 @@ jobs:
     - name: Install and Build
       run: |
         npm install
-        npm run build
-        npm run script
-
-    - name: Deploy
-      uses: JamesIves/github-pages-deploy-action@4.1.2
-      with:
-        TOKEN: ${{ secrets.ACCESS_TOKEN }}
-        BRANCH: gh-pages
-        FOLDER: dist
+        cross-env PUSHPLUS_TOKEN=${{ secrets.PUSHPLUS_TOKEN }}  node ./script/index.js

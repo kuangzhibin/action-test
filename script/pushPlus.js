@@ -1,9 +1,11 @@
 const axios = require('axios');
 
 module.exports = function pushMsg() {
-  const token = 'b1aa0c343c4c4164824704c4653a5ee5';
+  const serverUrl = 'http://www.pushplus.plus/send'
+  const token = process.env.PUSHPLUS_TOKEN;
   let title = "掘金创作者中心上线啦！！"
   let content = `在这里你可以即时看到粉丝的增长；
+
 
   也可以即时感受到文章阅读量的提升；
 
@@ -13,8 +15,7 @@ module.exports = function pushMsg() {
 
   你需要的创作可视化数据都在这里，快点击这里（web端）体验吧！`
 
-  // http://www.pushplus.plus/send?token=b1aa0c343c4c4164824704c4653a5ee5&title=XXX&content=XXX&template=html
-  axios.get('http://www.pushplus.plus/send', {
+  axios.get(serverUrl, {
     params: {
       token,
       title,

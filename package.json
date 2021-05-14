@@ -7,7 +7,7 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "script": "node ./script/index.js"
+    "script": "cross-env PUSHPLUS_TOKEN=b1aa0c343c4c4164824704c4653a5ee5  node ./script/index.js"
   },
   "dependencies": {
     "axios": "^0.21.1",
@@ -19,6 +19,7 @@
     "@vue/cli-plugin-eslint": "^4.1.0",
     "@vue/cli-service": "^4.1.0",
     "babel-eslint": "^10.0.3",
+    "cross-env": "^7.0.3",
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",
     "vue-template-compiler": "^2.6.10"
