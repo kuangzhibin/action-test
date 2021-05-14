@@ -17,4 +17,4 @@ jobs:
         npm install
 
     - name: Deploy
-      run: cross-env PUSHPLUS_TOKEN=${{ secrets.PUSHPLUS_TOKEN }}  node ./script/index.js
+      run: npm run script
