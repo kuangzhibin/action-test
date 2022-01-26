@@ -15,7 +15,7 @@ axios.get(url, {
   let {fxLink, now} = res.data;
   let {text, temp, feelsLike, windDir, windScale} = now;
   // 101020100 上海
-  pushMsg('实时天气-上海',
+  pushMsg('当前天气-上海',
   `天气：${text}
 气温：${temp}℃\t\t体感温度：${feelsLike}℃
 风向：${windDir}\t\t风力：${windScale}级
