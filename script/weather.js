@@ -22,5 +22,5 @@ axios.get(url, {
 
 详细信息： <a href="${fxLink}" target="_blank">${fxLink}</a> `);
 }).catch(() => {
-  console.log('天气查询失败')
+  console.log('天气查询失败！')
 })
